@@ -1,0 +1,76 @@
+.hero {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 700px;
+  margin-left: 80px;
+  animation: fadeIn 1.5s ease;
+}
+
+
+.hero h1 {
+  font-size: 65px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+  color: #b08d57;
+}
+
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+
+.hero button {
+  background: #b08d57;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.hero button:hover {
+  transform: translateY(-5px);
+}
+
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
