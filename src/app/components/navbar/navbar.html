@@ -3,8 +3,14 @@
   <div class="logo">
     PANDA<span>ISRA</span>
   </div>
+    <button class="burger" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <ul class="nav-links">
+
+  <ul class="nav-links" [class.active]="menuOpen">
     <li><a href="#home">Accueil</a></li>
     <li><a href="#about">Àpropos</a></li>
     <li><a href="#projects">Projets</a></li>
